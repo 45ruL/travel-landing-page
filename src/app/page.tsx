@@ -8,7 +8,7 @@ import { useRef, useState } from "react";
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
 
   // Handler untuk update activeIndex saat scroll
   const handleScroll = () => {
