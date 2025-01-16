@@ -18,7 +18,7 @@ type CardSecondaryProps = {
 const Card = ({ className, image, title, placeName }: CardProps) => {
   return (
     <div
-      className={`w-full overflow-hidden hover:shadow-lg transition-all duration-300 p-3 border border-colors-neutral-100 shadow-2xl shadow-colors-neutral-200 ${className}`}
+      className={`w-full overflow-hidden hover:shadow-lg transition-all duration-300 p-3 border border-colors-neutral-100 shadow-2xl shadow-colors-neutral-200 dark:shadow-none ${className}`}
     >
       <div className="relative w-full aspect-[4/3]">
         <Image
@@ -72,7 +72,7 @@ const CardSecondary = ({
   return (
     <div
       className={cn(
-        "w-full shadow-2xl shadow-colors-neutral-200",
+        "w-full shadow-2xl shadow-colors-neutral-200 dark:shadow-none",
         bgColor,
         className
       )}

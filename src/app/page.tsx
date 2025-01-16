@@ -74,7 +74,13 @@ export default function Home() {
           <p className="font-galda font-semibold text-colors-primary-600 text-xl md:text-3xl">
             Travel
           </p>
-          <Image src="/burgerMenu.png" alt="logo" width={20} height={24} />
+          <Image
+            src="/burgerMenu.png"
+            alt="logo"
+            width={20}
+            height={24}
+            className="dark:invert"
+          />
         </nav>
       </header>
 
@@ -204,10 +210,7 @@ export default function Home() {
         <section className="px-5 md:px-[120px] py-20 ">
           <div className="text-center">
             <Typography variant="h1">Why must choose us</Typography>
-            <Typography
-              variant="bodyMedium"
-              className="mt-3 mb-7 text-neutral-700"
-            >
+            <Typography variant="bodyMedium" className="mt-3 mb-7">
               We have been around for over 10 years. Accompany all our customers
               all over the world. Thousands of our customers always recommend us
               because of the service we provide. We are always re-elected and
