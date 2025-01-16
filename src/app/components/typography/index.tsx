@@ -2,6 +2,7 @@ import React from "react";
 
 interface TypographyProps {
   variant:
+    | "display"
     | "h1"
     | "h2"
     | "h3"
@@ -21,6 +22,8 @@ export const Typography = ({
   className = "",
 }: TypographyProps) => {
   const variants = {
+    display:
+      "font-galda font-normal text-[52px] leading-[52px] md:text-[170px] md:leading-[170px]",
     h1: "font-galda font-normal text-[40px] leading-[52px] md:text-[72px] md:leading-[84px]",
     h2: "font-galda font-normal text-[28px] leading-[40px] md:text-[40px] md:leading-[62px]",
     h3: "font-urbanist font-bold text-[20px] leading-[28px] md:text-[24px] md:leading-[36px]",
