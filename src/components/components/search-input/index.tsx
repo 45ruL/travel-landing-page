@@ -3,7 +3,7 @@ import Image from "next/image";
 export const SearchInput = ({ className }: { className?: string }) => {
   return (
     <div
-      className={`relative flex items-center w-full max-w-[470px] mx-auto ${className}`}
+      className={`relative flex items-center w-full max-w-[470px] ${className}`}
     >
       <div className="flex items-center gap-2 md:gap-4 w-full bg-white border border-colors-neutral-200 p-2 md:p-3 rounded-full hover:shadow-md transition-all duration-300">
         <Image
