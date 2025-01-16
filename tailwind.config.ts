@@ -43,6 +43,12 @@ export default {
         galda: ["var(--font-galda)", "Georgia", "serif"],
         urbanist: ["var(--font-urbanist)", "system-ui", "sans-serif"],
       },
+      container: {
+        center: true,
+        screens: {
+          "2xl": "1440px",
+        },
+      },
     },
   },
   plugins: [],
