@@ -10,7 +10,6 @@ export default function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
   const scrollRef = useRef<HTMLDivElement | null>(null);
 
-  // Handler untuk update activeIndex saat scroll
   const handleScroll = () => {
     if (scrollRef.current) {
       const scrollLeft = scrollRef.current.scrollLeft;
@@ -73,7 +72,7 @@ export default function Home() {
                 the world
               </Typography>
               <Image
-                src="/heroImage.png"
+                src="/hero.png"
                 alt="hero image"
                 width={1000}
                 height={5000}
@@ -162,7 +161,7 @@ export default function Home() {
                     key={idx}
                     className={`w-2 h-2 rounded-full transition-all duration-300 ${
                       activeIndex === idx
-                        ? "bg-blue-500 w-4" // active indicator
+                        ? "bg-colors-primary-600 w-4" // active indicator
                         : "bg-gray-300" // inactive indicator
                     }`}
                   />
