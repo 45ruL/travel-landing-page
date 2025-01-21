@@ -87,7 +87,7 @@ export default function Home() {
 
       <main className="container">
         {/* hero section */}
-        <section className="md:px-32 overflow-hidden">
+        <section className="md:px-32 overflow-hidden" id="home">
           <div className="flex flex-col pt-24 md:pt-16 lg:pt-24">
             <div className="relative h-[280px] md:h-[720px] w-full">
               <Typography variant="display" className="text-center px-4">
@@ -146,7 +146,7 @@ export default function Home() {
         </section>
 
         {/* destination section */}
-        <section className="px-5 md:px-[120px] py-20">
+        <section className="px-5 md:px-[120px] py-20" id="destination">
           <div className="md:flex items-center justify-between">
             <div className="flex-1">
               <Typography variant="h1" className="mb-3">
@@ -208,7 +208,7 @@ export default function Home() {
         </section>
 
         {/* why choose us section */}
-        <section className="px-5 md:px-[120px] py-20 ">
+        <section className="px-5 md:px-[120px] py-20" id="why">
           <div className="text-center">
             <Typography variant="h1">Why must choose us</Typography>
             <Typography variant="bodyMedium" className="mt-3 mb-7">
@@ -234,7 +234,7 @@ export default function Home() {
         </section>
 
         {/* section gatau */}
-        <section className="px-5 md:px-[120px] py-20">
+        <section className="px-5 md:px-[120px] py-20" id="gatau">
           <div className="md:grid grid-cols-2 justify-center items-center">
             <div className="flex flex-col gap-4">
               <Typography variant="h1">
@@ -280,7 +280,7 @@ export default function Home() {
         </section>
 
         {/* section video */}
-        <section className="py-20">
+        <section className="py-20" id="video">
           <div className="px-5 md:px-[120px]">
             <Typography variant="h1" className="text-center mb-10">
               Watch our entire trip documentation
@@ -334,6 +334,7 @@ export default function Home() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="instagram"
                 className="text-colors-primary-600 bg-colors-primary-100 p-2 md:p-3 rounded-full"
               >
                 <svg
@@ -352,6 +353,7 @@ export default function Home() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="twitter"
                 className="text-colors-primary-600 bg-colors-primary-100 p-2 md:p-3 rounded-full"
               >
                 <svg
@@ -370,6 +372,7 @@ export default function Home() {
                 href="https://youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="youtube"
                 className="text-colors-primary-600 bg-colors-primary-100 p-2 md:p-3 rounded-full"
               >
                 <svg
@@ -387,22 +390,22 @@ export default function Home() {
             <div className="mt-7 md:mt-0">
               <ul className="flex gap-5">
                 <li>
-                  <Link href={"#"}>
+                  <Link href={"#home"} scroll>
                     <Typography variant="bodySemiBold">Home</Typography>
                   </Link>
                 </li>
                 <li>
-                  <Link href={"#"}>
+                  <Link href={"#destination"}>
                     <Typography variant="bodySemiBold">Destinations</Typography>
                   </Link>
                 </li>
                 <li>
-                  <Link href={"#"}>
+                  <Link href={"#why"}>
                     <Typography variant="bodySemiBold">Guide</Typography>
                   </Link>
                 </li>
                 <li>
-                  <Link href={"#"}>
+                  <Link href={"#gatau"}>
                     <Typography variant="bodySemiBold">Contact Us</Typography>
                   </Link>
                 </li>
